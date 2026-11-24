@@ -3,7 +3,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const line =
-  "I deployed to production without running the tests, and now the site is down. The outage is my fault.";
+  "I skipped the tests, merged my own PR, and deleted the production database. The outage is me — on purpose, by accident.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", line + "\n", "utf8");
